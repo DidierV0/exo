@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>réécrir if en ?</title>
+</head>
+<body>
+    
+    <script>
+        
+        let login = '-'
+        let message = '';
+
+        // (login == 'employé') ? message = 'hello'
+        // (login == 'directeur')? message = 'Greetings'
+        // (login == ''): message = 'No login' :
+        // message = '';
+
+        message = (login == 'employé') ? 'hello' : 
+                    (login == 'directeur')? 'Greetings':
+                    (login == '') ? 'no login':
+                    '' ;
+
+
+        console.log(message);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Répété jusqu'à ce que l'entrée soit correcte</title>
+</head>
+<body>
+    
+    <script>
+
+        let nbChoisi = 0
+        let boucler = true
+
+        while (boucler == true) {
+            
+            nbChoisi = prompt("choisissez un nombre supérieure à 100")
+            
+            if (nbChoisi === "" || nbChoisi === " " ) {
+                boucler = false
+            } else if (nbChoisi <= 100) {
+                alert("ce nombre n'est pas supérieur a 100, saisisez un nouveau nombre")
+                boucler = true
+            } else {
+                alert("ce nombre est supérieur à 100 merci")
+                boucler = false
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
